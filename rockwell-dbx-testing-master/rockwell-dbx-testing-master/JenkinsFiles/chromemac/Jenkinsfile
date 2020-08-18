@@ -1,0 +1,165 @@
+#!groovy
+
+@Library('jenkins-artifactory-library') _
+
+pipeline {
+    agent { label 'master' }
+    tools { nodejs "NodeJS" }
+
+    environment {
+        BUILD_COLOR = ""
+        BS_PASSWORD = credentials('bs-password')
+        BS_PROJECT = "myRockwellAutomation"
+        BUILD_BRANCH = "master"
+        BS_BROWSER = "chrome-macCatalina"
+    }
+
+    parameters {
+        choice(choices: ['dev', 'devqa', 'uat', 'uatqa', 'raqa', 'prod'], description: 'Choose an environment', name: 'env')
+        string(defaultValue: '@Smoke', description: 'Username to login with on website', name: 'tags')
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                echo '############## Download NPM dependencies ################'
+                sh "npm install"
+                sh "printenv"
+                sh "echo ${GIT_BRANCH} - 'origin/'"
+            }
+        }
+
+        stage('Integration Tests - All ') {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) }
+            }
+            steps {
+                runTests(tags: params.tags);
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage("Browserstack Testing - New User Validation with new User") {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) && (params.env.matches('uat') || params.env.matches('uatqa')) }
+            }
+            environment {
+                BS_USERNAME = "newusertest@mailinator.com"
+                BS_PASSWORD = credentials('bs-password')
+                BS_PROJECT = "New User Validation Tests"
+            }
+            steps {
+                runTests( tags: '@NewUserValidation' );
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage('Product Availability Tests') {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) && (params.env.matches('uat') || params.env.matches('uatqa')) }
+            }
+            environment {
+                BS_USERNAME = "myigneousrock.uat@mailinator.com"
+                BS_PASSWORD = credentials('bs-product-availability-password')
+                BS_PROJECT = "Product Availability Tests"
+            }
+            steps {
+                runTests(tags: '@ProductAvailability');
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage('Repairs Search with Specific User Access Tests') {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) && (params.env.matches('uat') || params.env.matches('uatqa')) }
+            }
+            environment {
+                BS_USERNAME = "radbx@ra.rockwell.com"
+                BS_PASSWORD = credentials('bs-radbx-password')
+                BS_PROJECT = "Search Repairs Tests"
+            }
+            steps {
+                runTests(tags: '@SearchRepairs')
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage('BOM Orders And Quotes Tests') {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) && (params.env.matches('uat') || params.env.matches('uatqa')) }
+            }
+            environment {
+                BS_USERNAME = "pilotgroups.uat@mailinator.com"
+                BS_PASSWORD = credentials('bs-product-availability-password')
+                BS_PROJECT = "BOM Orders And Quotes Tests"
+                BS_BROWSER = "chrome-windows10"
+            }
+            steps {
+                runTests(tags: '@BOMDist')
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage('Registered Product List Validation Tests') {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) && (params.env.matches('uat') || params.env.matches('uatqa')) }
+            }
+            environment {
+                BS_USERNAME = "radbx@ra.rockwell.com"
+                BS_PASSWORD = "RockwellAutomation1"
+                BS_PROJECT = "Reg Pdt List Tests"
+            }
+            steps {
+                runTests(tags: '@RegProdList')
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage('Test get metadata') {
+            steps {
+                echo '############## Get Metadata Info ################'
+                script{
+                  METADATA = getMetadata(URL_MAP[params.env])
+                  sh "echo ${METADATA.buildVersion}"
+                  sh "echo ${METADATA.gitHash}"
+                  // https://github.com/jenkinsci/badge-plugin
+                  addShortText(text: "${METADATA.buildVersion}", id: "MyRockwell Build", link: "${METADATA.jenkinsBuildUrl}")
+                }
+            }
+        }
+    }
+}
+
+// Based off of the "customHash" function used in myrockwell's deployment.
+def getMetadata(env){
+  def response = httpRequest "https://${env}.rockwellautomation.com/my/assets/config/metadata.json"
+  def encoded = response.content.substring(0, 2) + response.content.substring(3, response.content.length())
+  def decoded = new String(encoded.decodeBase64())
+  println("Content Decoded: "+ decoded)
+  def metadata = readJSON text: decoded
+  return metadata
+}

@@ -1,0 +1,84 @@
+#!groovy
+
+@Library('jenkins-artifactory-library') _
+
+pipeline {
+    agent { label 'master' }
+    tools { nodejs "NodeJS" }
+
+    environment {
+        BUILD_COLOR = ""
+        BS_PASSWORD = credentials('bs-password')
+        BS_PROJECT = "myRockwellAutomation"
+        BUILD_BRANCH = "master"
+        BS_BROWSER = "chrome-windows10"
+    }
+
+    parameters {
+        choice(choices: ['dev', 'devqa', 'uat', 'uatqa', 'raqa', 'prod'], description: 'Choose an environment', name: 'env')
+        string(defaultValue: '@Smoke', description: 'Username to login with on website', name: 'tags')
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                echo '############## Download NPM dependencies ################'
+                sh "npm install"
+                sh "printenv"
+                sh "echo ${GIT_BRANCH} - 'origin/'"
+            }
+        }
+
+        stage('Integration Tests - All ') {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) }
+            }
+            steps {
+                runTests(tags: params.tags);
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage("Browserstack Testing - New User Validation with new User") {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) && (params.env.matches('uat') || params.env.matches('uatqa')) }
+            }
+            environment {
+                BS_USERNAME = "newusertest@mailinator.com"
+                BS_PASSWORD = credentials('bs-password')
+                BS_PROJECT = "New User Validation Tests"
+            }
+            steps {
+                runTests( tags: '@NewUserValidation' );
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+
+        stage('Registered Product List Validation Tests') {
+            when {
+                expression { (GIT_BRANCH - 'origin/').matches(BUILD_BRANCH) && (params.env.matches('uat') || params.env.matches('uatqa')) }
+            }
+            environment {
+                BS_USERNAME = "radbx@ra.rockwell.com"
+                BS_PASSWORD = "RockwellAutomation1"
+                BS_PROJECT = "Reg Pdt List Tests"
+            }
+            steps {
+                runTests(tags: '@RegProdList')
+            }
+            post {
+                always {
+                    generateReports();
+                }
+            }
+        }
+    }
+}

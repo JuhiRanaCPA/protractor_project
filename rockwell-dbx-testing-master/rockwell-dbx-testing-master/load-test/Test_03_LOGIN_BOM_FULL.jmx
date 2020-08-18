@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test_03_LOGIN_BOM_FULL" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter JSON to JMX convertor V.1.5.277. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies">
+          <elementProp name="woopra_tpc" elementType="Cookie" testname="woopra_tpc">
+            <stringProp name="Cookie.value">Pe32WJzwJQr8</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">false</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+        </collectionProp>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">6000</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">180</stringProp>
+        <longProp name="ThreadGroup.start_time">1363247040000</longProp>
+        <longProp name="ThreadGroup.end_time">1363247040000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.woopra.com/track/tp/rockwellautomation.com/ce/?ra=wtd2V9BRVt7j&amp;alias=rockwellautomation.com&amp;instance=woopra&amp;ka=24000&amp;meta=&amp;screen=1920x1080&amp;language=en-US&amp;app=js-client&amp;referer=https%3A%2F%2Fra-ma-uatqa.rockwellautomation.com%2Fhtml%2Findex.html%3Fcode%3DE7nwUhvu0Uuzha-Qg_R-ZQ.yVf0gDkH1QgsMvWK_OGhhMH0y1s.oqmcF03Q7ptaSdTfFztBGkFAC_GSb19H5eeEm2zWNzxgS-E9XfVotLKJ5c0Qp-xfBX7bt-yDiXJ8L7kNHw12jn9-q4verLM-Eh-TLhHQMqTDi4yxVPWCNt4zEYZo82YBtQEEQbvbU7o9xLRIvYSK-tYVZz1BG0YJ1xbBgsDou03SQwvh7gda83UqdazGefudTq_DiOp3KW8C04SPP9mmN9gANf9C2R56g4K4ihfKRL0bXYsy04byX-dIB_FMLcIJ0cZDr2i3zfKwMWdch_XSZ4LuOgS3hFhc4eTPVMquUJqUX-k4w244J0S0VbZ6bZtprsjW9D_aS2k4m6k1fWF0cw%26client-request-id%3D00000000-0000-0000-7700-008001000009&amp;idle=0&amp;vs=r&amp;cookie=Pe32WJzwJQr8&amp;event=One_Homepage&amp;cv_visitorid=ddd770f1-911b-489d-a30e-eb792a7e8ec5&amp;cv_email=solsticetest02%40solstice.com&amp;cv_name=Test02%2C%20Solstice&amp;ce_action=Click_button&amp;ce_label=ONE_local-manage_view-boms_btn" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="app" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">app</stringProp>
+                <stringProp name="Argument.value">js-client</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="referer" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">referer</stringProp>
+                <stringProp name="Argument.value">https%3A%2F%2Fra-ma-uatqa.rockwellautomation.com%2Fhtml%2Findex.html%3Fcode%3DE7nwUhvu0Uuzha-Qg_R-ZQ.yVf0gDkH1QgsMvWK_OGhhMH0y1s.oqmcF03Q7ptaSdTfFztBGkFAC_GSb19H5eeEm2zWNzxgS-E9XfVotLKJ5c0Qp-xfBX7bt-yDiXJ8L7kNHw12jn9-q4verLM-Eh-TLhHQMqTDi4yxVPWCNt4zEYZo82YBtQEEQbvbU7o9xLRIvYSK-tYVZz1BG0YJ1xbBgsDou03SQwvh7gda83UqdazGefudTq_DiOp3KW8C04SPP9mmN9gANf9C2R56g4K4ihfKRL0bXYsy04byX-dIB_FMLcIJ0cZDr2i3zfKwMWdch_XSZ4LuOgS3hFhc4eTPVMquUJqUX-k4w244J0S0VbZ6bZtprsjW9D_aS2k4m6k1fWF0cw%26client-request-id%3D00000000-0000-0000-7700-008001000009</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cv_email" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cv_email</stringProp>
+                <stringProp name="Argument.value">solsticetest02%40solstice.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="instance" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">instance</stringProp>
+                <stringProp name="Argument.value">woopra</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cookie" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cookie</stringProp>
+                <stringProp name="Argument.value">Pe32WJzwJQr8</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="idle" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">idle</stringProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cv_name" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cv_name</stringProp>
+                <stringProp name="Argument.value">Test02%2C%20Solstice</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cv_visitorid" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cv_visitorid</stringProp>
+                <stringProp name="Argument.value">ddd770f1-911b-489d-a30e-eb792a7e8ec5</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="screen" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">screen</stringProp>
+                <stringProp name="Argument.value">1920x1080</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="language" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">language</stringProp>
+                <stringProp name="Argument.value">en-US</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="ra" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ra</stringProp>
+                <stringProp name="Argument.value">wtd2V9BRVt7j</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="ce_label" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ce_label</stringProp>
+                <stringProp name="Argument.value">ONE_local-manage_view-boms_btn</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="ka" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ka</stringProp>
+                <stringProp name="Argument.value">24000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="meta" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">meta</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="alias" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">alias</stringProp>
+                <stringProp name="Argument.value">rockwellautomation.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="event" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">event</stringProp>
+                <stringProp name="Argument.value">One_Homepage</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="vs" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">vs</stringProp>
+                <stringProp name="Argument.value">r</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="ce_action" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ce_action</stringProp>
+                <stringProp name="Argument.value">Click_button</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">track/tp/rockwellautomation.com/ce/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ra-ma-uatqa.rockwellautomation.com/html/index.html</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">0.0</stringProp>
+            <stringProp name="ConstantTimer.delay">0.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://es-be-boms-qa.cloudhub.io/api/ux/v1/user/S-1-5-21-2082615948-103147911-3567761076-1216/bom?pagenumber=1&amp;pagesize=20" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="pagesize" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">pagesize</stringProp>
+                <stringProp name="Argument.value">20</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="pagenumber" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">pagenumber</stringProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">es-be-boms-qa.cloudhub.io</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">api/ux/v1/user/S-1-5-21-2082615948-103147911-3567761076-1216/bom</stringProp>
+          <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Access-Control-Request-Method" elementType="Header">
+                <stringProp name="Header.name">Access-Control-Request-Method</stringProp>
+                <stringProp name="Header.value">GET</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ra-ma-uatqa.rockwellautomation.com</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Access-Control-Request-Headers" elementType="Header">
+                <stringProp name="Header.name">Access-Control-Request-Headers</stringProp>
+                <stringProp name="Header.value">authorization,client_id,client_secret,correlation_id,user_email,user_id</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ra-ma-uatqa.rockwellautomation.com/html/index.html</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">10.4</stringProp>
+            <stringProp name="ConstantTimer.delay">20.8</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.woopra.com/track/tp/rockwellautomation.com/ce/?ra=T1KRcpQP5hrO&amp;alias=rockwellautomation.com&amp;instance=woopra&amp;ka=24000&amp;meta=&amp;screen=1920x1080&amp;language=en-US&amp;app=js-client&amp;referer=https%3A%2F%2Fra-ma-uatqa.rockwellautomation.com%2Fhtml%2Findex.html%3Fcode%3DE7nwUhvu0Uuzha-Qg_R-ZQ.yVf0gDkH1QgsMvWK_OGhhMH0y1s.oqmcF03Q7ptaSdTfFztBGkFAC_GSb19H5eeEm2zWNzxgS-E9XfVotLKJ5c0Qp-xfBX7bt-yDiXJ8L7kNHw12jn9-q4verLM-Eh-TLhHQMqTDi4yxVPWCNt4zEYZo82YBtQEEQbvbU7o9xLRIvYSK-tYVZz1BG0YJ1xbBgsDou03SQwvh7gda83UqdazGefudTq_DiOp3KW8C04SPP9mmN9gANf9C2R56g4K4ihfKRL0bXYsy04byX-dIB_FMLcIJ0cZDr2i3zfKwMWdch_XSZ4LuOgS3hFhc4eTPVMquUJqUX-k4w244J0S0VbZ6bZtprsjW9D_aS2k4m6k1fWF0cw%26client-request-id%3D00000000-0000-0000-7700-008001000009&amp;idle=0&amp;vs=r&amp;cookie=Pe32WJzwJQr8&amp;event=One_Search&amp;cv_visitorid=ddd770f1-911b-489d-a30e-eb792a7e8ec5&amp;cv_email=solsticetest02%40solstice.com&amp;cv_name=Test02%2C%20Solstice&amp;ce_action=Click_button&amp;ce_label=ONE_home-search_search_btn" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="app" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">app</stringProp>
+                <stringProp name="Argument.value">js-client</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="referer" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">referer</stringProp>
+                <stringProp name="Argument.value">https%3A%2F%2Fra-ma-uatqa.rockwellautomation.com%2Fhtml%2Findex.html%3Fcode%3DE7nwUhvu0Uuzha-Qg_R-ZQ.yVf0gDkH1QgsMvWK_OGhhMH0y1s.oqmcF03Q7ptaSdTfFztBGkFAC_GSb19H5eeEm2zWNzxgS-E9XfVotLKJ5c0Qp-xfBX7bt-yDiXJ8L7kNHw12jn9-q4verLM-Eh-TLhHQMqTDi4yxVPWCNt4zEYZo82YBtQEEQbvbU7o9xLRIvYSK-tYVZz1BG0YJ1xbBgsDou03SQwvh7gda83UqdazGefudTq_DiOp3KW8C04SPP9mmN9gANf9C2R56g4K4ihfKRL0bXYsy04byX-dIB_FMLcIJ0cZDr2i3zfKwMWdch_XSZ4LuOgS3hFhc4eTPVMquUJqUX-k4w244J0S0VbZ6bZtprsjW9D_aS2k4m6k1fWF0cw%26client-request-id%3D00000000-0000-0000-7700-008001000009</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cv_email" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cv_email</stringProp>
+                <stringProp name="Argument.value">solsticetest02%40solstice.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="instance" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">instance</stringProp>
+                <stringProp name="Argument.value">woopra</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cookie" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cookie</stringProp>
+                <stringProp name="Argument.value">Pe32WJzwJQr8</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="idle" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">idle</stringProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cv_name" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cv_name</stringProp>
+                <stringProp name="Argument.value">Test02%2C%20Solstice</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="cv_visitorid" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cv_visitorid</stringProp>
+                <stringProp name="Argument.value">ddd770f1-911b-489d-a30e-eb792a7e8ec5</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="screen" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">screen</stringProp>
+                <stringProp name="Argument.value">1920x1080</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="language" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">language</stringProp>
+                <stringProp name="Argument.value">en-US</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="ra" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ra</stringProp>
+                <stringProp name="Argument.value">T1KRcpQP5hrO</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="ce_label" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ce_label</stringProp>
+                <stringProp name="Argument.value">ONE_home-search_search_btn</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="ka" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ka</stringProp>
+                <stringProp name="Argument.value">24000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="meta" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">meta</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="alias" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">alias</stringProp>
+                <stringProp name="Argument.value">rockwellautomation.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="event" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">event</stringProp>
+                <stringProp name="Argument.value">One_Search</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="vs" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">vs</stringProp>
+                <stringProp name="Argument.value">r</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="ce_action" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ce_action</stringProp>
+                <stringProp name="Argument.value">Click_button</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">track/tp/rockwellautomation.com/ce/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ra-ma-uatqa.rockwellautomation.com/html/index.html</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">3.2</stringProp>
+            <stringProp name="ConstantTimer.delay">6.4</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://es-be-boms-qa.cloudhub.io/api/ux/v1/user/S-1-5-21-2082615948-103147911-3567761076-1216/bom?pagenumber=1&amp;pagesize=20" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="pagesize" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">pagesize</stringProp>
+                <stringProp name="Argument.value">20</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="pagenumber" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">pagenumber</stringProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">es-be-boms-qa.cloudhub.io</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">api/ux/v1/user/S-1-5-21-2082615948-103147911-3567761076-1216/bom</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="user_id" elementType="Header">
+                <stringProp name="Header.name">user_id</stringProp>
+                <stringProp name="Header.value">S-1-5-21-2082615948-103147911-3567761076-1216</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://ra-ma-uatqa.rockwellautomation.com</stringProp>
+              </elementProp>
+              <elementProp name="correlation_id" elementType="Header">
+                <stringProp name="Header.name">correlation_id</stringProp>
+                <stringProp name="Header.value">d301f137-1b40-8ace-85ca-186640dfc81a</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImRlNGpURl9lWktRSlNZdjFRelhYU2FHOVQ4WSJ9.eyJhdWQiOiJtaWNyb3NvZnQ6aWRlbnRpdHlzZXJ2ZXI6TXlSb2Nrd2VsbEJldGEiLCJpc3MiOiJodHRwczovL2lkcC5yb2Nrd2VsbGF1dG9tYXRpb24uY29tL2FkZnMvc2VydmljZXMvdHJ1c3QiLCJpYXQiOjE1MDY2ODk3OTAsImV4cCI6MTUwNjY5MzM5MCwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaW1wbGljaXR1cG4iOiJzb2xzdGljZXRlc3QwMkByYS1leHQuY29tIiwiYW1wIjoiRm9ybXNBdXRoZW50aWNhdGlvbiIsImF1dGhfdGltZSI6IjIwMTctMDktMjlUMTI6NTY6MjguNTM1WiIsImF1dGhtZXRob2QiOiJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YWM6Y2xhc3NlczpQYXNzd29yZFByb3RlY3RlZFRyYW5zcG9ydCIsInB3ZGV4cHRpbWUiOiIyMDE3LTEwLTMxVDIwOjMxOjAwLjc2OVoiLCJhbmNob3IiOiJ3aW5hY2NvdW50bmFtZSIsImVtYWlsIjoic29sc3RpY2V0ZXN0MDJAc29sc3RpY2UuY29tIiwidXBuIjoic29sc3RpY2V0ZXN0MDJAcmEtZXh0LmNvbSIsInByaW1hcnlncm91cHNpZCI6IlMtMS01LTIxLTIwODI2MTU5NDgtMTAzMTQ3OTExLTM1Njc3NjEwNzYtNTEzIiwicHJpbWFyeXNpZCI6IlMtMS01LTIxLTIwODI2MTU5NDgtMTAzMTQ3OTExLTM1Njc3NjEwNzYtMTIxNiIsInVuaXF1ZV9uYW1lIjpbIlJBLUVYVFxcU29sc3RpY2VUZXN0MDIiLCJTb2xzdGljZVRlc3QwMiJdLCJ3aW5hY2NvdW50bmFtZSI6IlJBLUVYVFxcU29sc3RpY2VUZXN0MDIiLCJhbXIiOiJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YWM6Y2xhc3NlczpQYXNzd29yZFByb3RlY3RlZFRyYW5zcG9ydCIsImdyb3Vwc2lkIjpbIlMtMS01LTIxLTIwODI2MTU5NDgtMTAzMTQ3OTExLTM1Njc3NjEwNzYtNTEzIiwiUy0xLTEtMCIsIlMtMS01LTMyLTU0NSIsIlMtMS01LTIiLCJTLTEtNS0xMSIsIlMtMS01LTE1IiwiUy0xLTUtMjEtMjA4MjYxNTk0OC0xMDMxNDc5MTEtMzU2Nzc2MTA3Ni0xMjAwIiwiUy0xLTE4LTIiXSwiYXBwaWQiOiI4NDBkYzQ3MS1hOTc4LTRjYzQtOTBjZS1iYmViM2VlYTdiZmQiLCJhcHB0eXBlIjoiUHVibGljIiwiY2xpZW50dXNlcmFnZW50IjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvNjEuMC4zMTYzLjEwMCBTYWZhcmkvNTM3LjM2IiwiZW5kcG9pbnRwYXRoIjoiL2FkZnMvb2F1dGgyL2F1dGhvcml6ZSIsImluc2lkZWNvcnBuZXR3b3JrIjoiZmFsc2UiLCJwcm94eSI6IlVTTUtFU1JWNzgzMyIsImNsaWVudHJlcWlkIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTc3MDAtMDA4MDAxMDAwMDA5IiwiZm9yd2FyZGVkY2xpZW50aXAiOiIyMDUuMTc1LjI0MS4zMCIsImNsaWVudGlwIjoiMTMxLjIwMC4xNzcuOTIiLCJ1c2VyaXAiOiIyMDUuMTc1LjI0MS4zMCIsImZhbWlseV9uYW1lIjoiVGVzdDAyIiwiZ2l2ZW5fbmFtZSI6IlNvbHN0aWNlIiwidmVyIjoiMS4wIn0.jLiMgIkvNknzas4glqU6OWda-Xe6HRh6wO_GZA4h3QT2Agg7QOdGWElIBgpNMm79ynGZMIQjCKhrdcrRFsTrh56Sr35qFcZZrGRqXx7cysksH-pmrSQwJVEEN57CiiTCQwrTwadShBRzYL4RvyyqknSsoSn1vf1rr__nt_Wp40mYOkWFftcq5Qy0MIKUXe0tufhlHt4BKygeVjsKglyHqhAFTz4hZsh6vhDx2Li5RQSeKizv6fsvOibZVcl4UZMJzt2eB-ebNMhhm6406qQ2-SNaQytyqZ0jvnkLU2qdogC6L4PdRpb5hKfm_oavMWawbC4XBD-lZFy2t1782XfuFQ</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="user_email" elementType="Header">
+                <stringProp name="Header.name">user_email</stringProp>
+                <stringProp name="Header.value">solsticetest02@solstice.com</stringProp>
+              </elementProp>
+              <elementProp name="client_secret" elementType="Header">
+                <stringProp name="Header.name">client_secret</stringProp>
+                <stringProp name="Header.value">334a5761b1214eA39aD861FE98EcE232</stringProp>
+              </elementProp>
+              <elementProp name="client_id" elementType="Header">
+                <stringProp name="Header.name">client_id</stringProp>
+                <stringProp name="Header.value">3e66826bf17948e39442a24f5eb576ea</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ra-ma-uatqa.rockwellautomation.com/html/index.html</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">142.8</stringProp>
+            <stringProp name="ConstantTimer.delay">285.6</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.woopra.com/track/tp/rockwellautomation.com/ping/?ra=rB52n1NLouml&amp;alias=rockwellautomation.com&amp;instance=woopra&amp;ka=24000&amp;meta=&amp;screen=1920x1080&amp;language=en-US&amp;app=js-client&amp;referer=https%3A%2F%2Fra-ma-uatqa.rockwellautomation.com%2Fhtml%2Findex.html%3Fcode%3DE7nwUhvu0Uuzha-Qg_R-ZQ.yVf0gDkH1QgsMvWK_OGhhMH0y1s.oqmcF03Q7ptaSdTfFztBGkFAC_GSb19H5eeEm2zWNzxgS-E9XfVotLKJ5c0Qp-xfBX7bt-yDiXJ8L7kNHw12jn9-q4verLM-Eh-TLhHQMqTDi4yxVPWCNt4zEYZo82YBtQEEQbvbU7o9xLRIvYSK-tYVZz1BG0YJ1xbBgsDou03SQwvh7gda83UqdazGefudTq_DiOp3KW8C04SPP9mmN9gANf9C2R56g4K4ihfKRL0bXYsy04byX-dIB_FMLcIJ0cZDr2i3zfKwMWdch_XSZ4LuOgS3hFhc4eTPVMquUJqUX-k4w244J0S0VbZ6bZtprsjW9D_aS2k4m6k1fWF0cw%26client-request-id%3D00000000-0000-0000-7700-008001000009&amp;idle=0&amp;vs=r&amp;cookie=Pe32WJzwJQr8" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="app" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">app</stringProp>
+                <stringProp name="Argument.value">js-client</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="referer" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">referer</stringProp>
+                <stringProp name="Argument.value">https%3A%2F%2Fra-ma-uatqa.rockwellautomation.com%2Fhtml%2Findex.html%3Fcode%3DE7nwUhvu0Uuzha-Qg_R-ZQ.yVf0gDkH1QgsMvWK_OGhhMH0y1s.oqmcF03Q7ptaSdTfFztBGkFAC_GSb19H5eeEm2zWNzxgS-E9XfVotLKJ5c0Qp-xfBX7bt-yDiXJ8L7kNHw12jn9-q4verLM-Eh-TLhHQMqTDi4yxVPWCNt4zEYZo82YBtQEEQbvbU7o9xLRIvYSK-tYVZz1BG0YJ1xbBgsDou03SQwvh7gda83UqdazGefudTq_DiOp3KW8C04SPP9mmN9gANf9C2R56g4K4ihfKRL0bXYsy04byX-dIB_FMLcIJ0cZDr2i3zfKwMWdch_XSZ4LuOgS3hFhc4eTPVMquUJqUX-k4w244J0S0VbZ6bZtprsjW9D_aS2k4m6k1fWF0cw%26client-request-id%3D00000000-0000-0000-7700-008001000009</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="instance" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">instance</stringProp>
+                <stringProp name="Argument.value">woopra</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="cookie" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">cookie</stringProp>
+                <stringProp name="Argument.value">Pe32WJzwJQr8</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="idle" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">idle</stringProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="screen" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">screen</stringProp>
+                <stringProp name="Argument.value">1920x1080</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="language" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">language</stringProp>
+                <stringProp name="Argument.value">en-US</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="ra" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ra</stringProp>
+                <stringProp name="Argument.value">rB52n1NLouml</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="ka" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">ka</stringProp>
+                <stringProp name="Argument.value">24000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="meta" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">meta</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="alias" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">alias</stringProp>
+                <stringProp name="Argument.value">rockwellautomation.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="vs" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">vs</stringProp>
+                <stringProp name="Argument.value">r</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">track/tp/rockwellautomation.com/ping/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://ra-ma-uatqa.rockwellautomation.com/html/index.html</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <stringProp name="RandomTimer.range">1607.6000000000001</stringProp>
+            <stringProp name="ConstantTimer.delay">3215.2000000000003</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

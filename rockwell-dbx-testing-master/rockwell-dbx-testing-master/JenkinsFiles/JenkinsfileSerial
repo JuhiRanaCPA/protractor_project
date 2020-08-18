@@ -1,0 +1,91 @@
+
+def COLOR_MAP = ['SUCCESS': 'good', 'FAILURE': 'danger', 'UNSTABLE': 'danger', 'ABORTED': 'danger']
+def browserStackMyResult = ""
+
+pipeline {
+    agent { label 'master' }
+    tools { nodejs "NodeJS" }
+
+    stages {
+
+        //need validation if branch is the right one
+
+        stage("Test on Homepage") {
+            steps {
+                build job: 'dbx-automation-my-homepage',
+                parameters: [
+                    string(name: 'tags', value: '@Homepage')
+                ]
+            }
+        }
+
+        stage("Test on BOM") {
+            steps {
+                build job: 'dbx-automation-my-bom',
+                parameters: [
+                    string(name: 'tags', value: '@BomJenkins02')
+                ]
+            }
+        }
+        
+        stage("Test on Menu Drawer") {
+            steps {
+                build job: 'dbx-automation-my-menu-drawer',
+                parameters: [
+                    string(name: 'tags', value: '@MenuDrawerJenkins03')
+                ]
+            }
+        }
+
+        stage("Test on New User Validation") {
+            steps {
+                build job: 'dbx-automation-my-new-user-validation',
+                parameters: [
+                    string(name: 'tags', value: '@NewUserValidation')
+                ]
+            }
+        }
+
+        stage("Test on Contact Update") {
+            steps {
+                build job: 'dbx-automation-my-contact-update',
+                parameters: [
+                    string(name: 'tags', value: '@myContactUpdate')
+                ]
+            }
+        }
+
+        stage("Test on Visit Apps") {
+            steps {
+                build job: 'dbx-automation-my-visit-apps',
+                parameters: [
+                    string(name: 'tags', value: '@VisitApps')
+                ]
+            }
+        }
+
+        //stage("Login") {
+            //steps {
+                //build job: 'dbx-automation-am-feature',
+                //parameters: [
+                    //string(name: 'tags', value: '@Login')
+                //]
+            //}
+        //}
+
+       
+
+        stage("Determine Result") {
+            steps {
+                script {
+                    if (browserStackMyResult != "" && browserStackMyResult != "SUCCESS") {
+                        sh "echo 'Regression Failed!' && exit 1"
+                    }
+                }
+                echo "browserStackMyResult: ${browserStackMyResult}"
+            }
+        }
+    }
+
+    
+}

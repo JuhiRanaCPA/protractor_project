@@ -1,0 +1,60 @@
+
+def COLOR_MAP = ['SUCCESS': 'good', 'FAILURE': 'danger', 'UNSTABLE': 'danger', 'ABORTED': 'danger']
+def browserStackMyResult = ""
+
+pipeline {
+    agent any
+    tools { nodejs "NodeJS" }
+
+    environment {
+        BUILD_COLOR = ""
+        BS_PASSWORD = credentials('bs-password')
+        BRANCH_TO_RUN = ".*/master"
+    }
+
+    stages {
+        stage('Workspace Setup') {
+            steps {
+                echo '############## Download NPM dependencies ################'
+                sh "npm install"
+                sh "printenv"
+            }
+        }
+        stage("Browserstack Testing") {
+            steps {
+                
+                script{
+                    switch(params.tags) {
+                        case '@NewUserValidation':
+                            env.BS_USERNAME = "newusertest@mailinator.com"
+                            break
+                        default:
+                            env.BS_USERNAME = "rockwellchromewin10@mailinator.com"
+                            break
+                    }
+                    withEnv(["BS_USERNAME=${env.BS_USERNAME}"]) {
+                        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                            sh "./node_modules/.bin/tsc"
+                            //sh 'cp -R $WEBDRIVER_SELENIUM_FOLDER ./node_modules/webdriver-manager/' //This is temporary until this issue is resolved:  https://developercommunity.visualstudio.com/content/problem/348982/npm-install-read-econnreset.html
+                            sh "./node_modules/protractor/bin/protractor ./typeScript/config/my/remote.config.js --cucumberOpts.tags=${params.tags}  --params.env=uat; echo \$?"
+                        }
+                    }
+                }
+            }
+            
+        }        
+
+        stage("Determine Result") {
+            steps {
+                script {
+                    if (browserStackMyResult != "" && browserStackMyResult != "SUCCESS") {
+                        sh "echo 'Regression Failed!' && exit 1"
+                    }
+                }
+                echo "browserStackMyResult: ${browserStackMyResult}"
+            }
+        }
+    }
+
+    
+}

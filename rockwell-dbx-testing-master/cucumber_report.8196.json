@@ -1,0 +1,2744 @@
+[
+  {
+    "description": "  As a user\n  I want to login\n  So that I can access MyRockwell",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "tests\\my\\features\\login\\login.feature",
+    "elements": [
+      {
+        "id": "login;user-is-not-logged-in",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "User is not logged in",
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 6
+          },
+          {
+            "name": "@Homepage",
+            "line": 7
+          },
+          {
+            "name": "@Bom",
+            "line": 8
+          },
+          {
+            "name": "@BOMOrders",
+            "line": 9
+          },
+          {
+            "name": "@BOMQuotes",
+            "line": 10
+          },
+          {
+            "name": "@BOMDist",
+            "line": 11
+          },
+          {
+            "name": "@CSM",
+            "line": 12
+          },
+          {
+            "name": "@Repairs",
+            "line": 13
+          },
+          {
+            "name": "@SearchRepairs",
+            "line": 14
+          },
+          {
+            "name": "@MyEquipment",
+            "line": 15
+          },
+          {
+            "name": "@PowerBI",
+            "line": 16
+          },
+          {
+            "name": "@Services",
+            "line": 17
+          },
+          {
+            "name": "@Search",
+            "line": 18
+          },
+          {
+            "name": "@HelpCenter",
+            "line": 19
+          },
+          {
+            "name": "@PDT",
+            "line": 20
+          },
+          {
+            "name": "@RegProdList",
+            "line": 21
+          },
+          {
+            "name": "@ServicesWithAccess",
+            "line": 22
+          },
+          {
+            "name": "@BOMSecurity",
+            "line": 23
+          },
+          {
+            "name": "@ProductAvailability",
+            "line": 24
+          },
+          {
+            "name": "@VisitApps",
+            "line": 25
+          },
+          {
+            "name": "@NewUserValidation",
+            "line": 26
+          },
+          {
+            "name": "@myContactUpdate",
+            "line": 27
+          },
+          {
+            "name": "@BomJenkins02",
+            "line": 28
+          },
+          {
+            "name": "@MenuDrawerJenkins03",
+            "line": 29
+          },
+          {
+            "name": "@Smoke",
+            "line": 30
+          },
+          {
+            "name": "@Regression",
+            "line": 30
+          },
+          {
+            "name": "@Ready",
+            "line": 30
+          },
+          {
+            "name": "@CAPM",
+            "line": 30
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\BOM-Orders-Navigation.step.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\bomQuotesNavigation.step.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\CreateEditNameDeleteBom.step.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\EncodeHTMLInManualProductBOM.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\help-center\\helpCenter.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\Reading-CAPM-BOM-Share-Notifications.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\verifySearchManageBrowseUI.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\logout\\logout.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-contacts\\myContactUpdate.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-equipment\\MyEquipment.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\new-user-validation\\NewUserValidation.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\createNewCustomer.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registeredProductList.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registerProduct.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\CreateQuoteEditProductDeleteQuote.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\FilterQuotes.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\ManuallyAddProductToQuoteFromNoSearch.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\Repairs-Quotes-Search.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\RepairsOrdersSearch.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\VerifyMyOrderMyQuotesTabs.step.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\productAvailability.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\quickLink.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\search.step.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesFilterTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesMarketingPage.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesSortTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\visitapps.step.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\shared\\services.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "User navigates to the myRockwell site",
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11938000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "User is not logged in",
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1065000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "User should navigate to the sign in page",
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1947000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "User enters username and password",
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11055000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "User clicks sign in",
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4054000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "User should be directed to myRockwell home page",
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17115000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "   As a user I need to verify the Apps details page\n   for mobile, browser and desktop apps",
+    "keyword": "Feature",
+    "name": "Verify Apps details Page",
+    "line": 3,
+    "id": "verify-apps-details-page",
+    "tags": [
+      {
+        "name": "@VisitApps",
+        "line": 1
+      },
+      {
+        "name": "@Smoke",
+        "line": 2
+      },
+      {
+        "name": "@Regression",
+        "line": 2
+      }
+    ],
+    "uri": "tests\\my\\features\\visitapp\\appDetails.feature",
+    "elements": [
+      {
+        "id": "verify-apps-details-page;user-verifies-apps-details-page-for-mobile,-web-&-desktop-apps",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "User verifies Apps details page for Mobile, Web & Desktop Apps",
+        "tags": [
+          {
+            "name": "@VisitApps",
+            "line": 1
+          },
+          {
+            "name": "@Smoke",
+            "line": 2
+          },
+          {
+            "name": "@Regression",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\BOM-Orders-Navigation.step.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\bomQuotesNavigation.step.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\CreateEditNameDeleteBom.step.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\EncodeHTMLInManualProductBOM.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\help-center\\helpCenter.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\Reading-CAPM-BOM-Share-Notifications.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\verifySearchManageBrowseUI.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\logout\\logout.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-contacts\\myContactUpdate.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-equipment\\MyEquipment.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\new-user-validation\\NewUserValidation.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\createNewCustomer.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registeredProductList.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registerProduct.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\CreateQuoteEditProductDeleteQuote.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\FilterQuotes.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\ManuallyAddProductToQuoteFromNoSearch.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\Repairs-Quotes-Search.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\RepairsOrdersSearch.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\VerifyMyOrderMyQuotesTabs.step.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\productAvailability.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\quickLink.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\search.step.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesFilterTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesMarketingPage.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesSortTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\visitapps.step.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\shared\\services.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user clicks on the menu button",
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3867000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the User clicks on App Store",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6241000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the user should navigate to the App store landing page",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "user is able to view the different Mobile apps",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4360000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on any of the apps",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5612000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user is on the App details page",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user is able to view the App title",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8090000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user is able to view the Save to My Apps button",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1449000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user is able to view the Select Platform button",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1809000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user is able to view the App Description",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12990000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user is able to view other App details such as \"Support\",\"Languages\",\"Requirements\" section",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2675000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-apps-details-page;user-verifies-apps-details-page-for-mobile,-web-&-desktop-apps",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "User verifies Apps details page for Mobile, Web & Desktop Apps",
+        "tags": [
+          {
+            "name": "@VisitApps",
+            "line": 1
+          },
+          {
+            "name": "@Smoke",
+            "line": 2
+          },
+          {
+            "name": "@Regression",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\BOM-Orders-Navigation.step.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\bomQuotesNavigation.step.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\CreateEditNameDeleteBom.step.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\EncodeHTMLInManualProductBOM.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\help-center\\helpCenter.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\Reading-CAPM-BOM-Share-Notifications.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\verifySearchManageBrowseUI.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\logout\\logout.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-contacts\\myContactUpdate.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-equipment\\MyEquipment.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\new-user-validation\\NewUserValidation.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\createNewCustomer.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registeredProductList.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registerProduct.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\CreateQuoteEditProductDeleteQuote.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\FilterQuotes.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\ManuallyAddProductToQuoteFromNoSearch.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\Repairs-Quotes-Search.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\RepairsOrdersSearch.step.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\VerifyMyOrderMyQuotesTabs.step.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\productAvailability.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\quickLink.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\search.step.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesFilterTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesMarketingPage.step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesSortTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\visitapps.step.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\shared\\services.step.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user clicks on the menu button",
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3846000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the User clicks on App Store",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5836000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the user should navigate to the App store landing page",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4642000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "user is able to view the different Web apps",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on any of the apps",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4083000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user is on the App details page",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 630000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user is able to view the App title",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:37"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 12289000000,
+              "error_message": "TimeoutError: Wait timed out after 12274ms\n    at C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:2188:20)\n    at ControlFlow.wait (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\promise.js:2517:12)\n    at thenableWebDriverProxy.wait (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\selenium-webdriver\\lib\\webdriver.js:934:29)\n    at run (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\protractor\\built\\browser.js:58:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\node_modules\\protractor\\built\\browser.js:66:16)\n    at Function.<anonymous> (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\typeScript\\tests\\util\\util.js:52:41)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\typeScript\\tests\\util\\util.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\typeScript\\tests\\util\\util.js:4:12)\n    at Function.waitForVisibilityOf (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\typeScript\\tests\\util\\util.js:51:16)\n    at AppDetailsPageObject.<anonymous> (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\typeScript\\tests\\my\\features\\visitapp\\appDetails.po.js:185:32)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\typeScript\\tests\\my\\features\\visitapp\\appDetails.po.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\NSubram3\\Documents\\rockwell-dbx-testing\\typeScript\\tests\\my\\features\\visitapp\\appDetails.po.js:4:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user is able to view the Save to My Apps button",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:40"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user is able to view the Select Platform button",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:48"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user is able to view the App Description",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:59"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user is able to view other App details such as \"Support\",\"Languages\",\"Requirements\" section",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:62"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-apps-details-page;user-verifies-apps-details-page-for-mobile,-web-&-desktop-apps",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "User verifies Apps details page for Mobile, Web & Desktop Apps",
+        "tags": [
+          {
+            "name": "@VisitApps",
+            "line": 1
+          },
+          {
+            "name": "@Smoke",
+            "line": 2
+          },
+          {
+            "name": "@Regression",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\BOM-Orders-Navigation.step.js:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\bomQuotesNavigation.step.js:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\CreateEditNameDeleteBom.step.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\EncodeHTMLInManualProductBOM.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\help-center\\helpCenter.step.js:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:22"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\Reading-CAPM-BOM-Share-Notifications.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\verifySearchManageBrowseUI.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\logout\\logout.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-contacts\\myContactUpdate.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-equipment\\MyEquipment.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\new-user-validation\\NewUserValidation.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\createNewCustomer.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registeredProductList.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registerProduct.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\CreateQuoteEditProductDeleteQuote.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\FilterQuotes.step.js:20"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\ManuallyAddProductToQuoteFromNoSearch.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\Repairs-Quotes-Search.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\RepairsOrdersSearch.step.js:20"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\VerifyMyOrderMyQuotesTabs.step.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\productAvailability.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\quickLink.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\search.step.js:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesFilterTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesMarketingPage.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesSortTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\visitapps.step.js:24"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\shared\\services.step.js:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user clicks on the menu button",
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the User clicks on App Store",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:72"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the user should navigate to the App store landing page",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:75"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "user is able to view the different Desktop apps",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:28"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on any of the apps",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:31"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user is on the App details page",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:34"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user is able to view the App title",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:37"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user is able to view the Save to My Apps button",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:40"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user is able to view the Select Platform button",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:48"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user is able to view the App Description",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:59"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user is able to view other App details such as \"Support\",\"Languages\",\"Requirements\" section",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:62"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    As a user\n    I want to use the menu sign out button\n    to sign out of myRockwell account",
+    "keyword": "Feature",
+    "name": "Logout",
+    "line": 12,
+    "id": "logout",
+    "tags": [
+      {
+        "name": "@Logout",
+        "line": 1
+      },
+      {
+        "name": "@Homepage",
+        "line": 2
+      },
+      {
+        "name": "@BomJenkins02",
+        "line": 3
+      },
+      {
+        "name": "@MenuDrawerJenkins03",
+        "line": 4
+      },
+      {
+        "name": "@NewUserValidation",
+        "line": 5
+      },
+      {
+        "name": "@RegProdList",
+        "line": 6
+      },
+      {
+        "name": "@myContactUpdate",
+        "line": 7
+      },
+      {
+        "name": "@HelpCenter",
+        "line": 8
+      },
+      {
+        "name": "@VisitApps",
+        "line": 9
+      },
+      {
+        "name": "@PDT",
+        "line": 10
+      },
+      {
+        "name": "@Smoke",
+        "line": 11
+      },
+      {
+        "name": "@Regression",
+        "line": 11
+      }
+    ],
+    "uri": "tests\\my\\features\\logout\\logout.feature",
+    "elements": [
+      {
+        "id": "logout;user-is-signing-out",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "User is signing out",
+        "tags": [
+          {
+            "name": "@Logout",
+            "line": 1
+          },
+          {
+            "name": "@Homepage",
+            "line": 2
+          },
+          {
+            "name": "@BomJenkins02",
+            "line": 3
+          },
+          {
+            "name": "@MenuDrawerJenkins03",
+            "line": 4
+          },
+          {
+            "name": "@NewUserValidation",
+            "line": 5
+          },
+          {
+            "name": "@RegProdList",
+            "line": 6
+          },
+          {
+            "name": "@myContactUpdate",
+            "line": 7
+          },
+          {
+            "name": "@HelpCenter",
+            "line": 8
+          },
+          {
+            "name": "@VisitApps",
+            "line": 9
+          },
+          {
+            "name": "@PDT",
+            "line": 10
+          },
+          {
+            "name": "@Smoke",
+            "line": 11
+          },
+          {
+            "name": "@Regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\BOM-Orders-Navigation.step.js:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\bomQuotesNavigation.step.js:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\CreateEditNameDeleteBom.step.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\bom\\EncodeHTMLInManualProductBOM.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\help-center\\helpCenter.step.js:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\homepageHeader.step.js:22"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\Reading-CAPM-BOM-Share-Notifications.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\homepage\\verifySearchManageBrowseUI.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\logout\\logout.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\menu\\menuDrawer.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-contacts\\myContactUpdate.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\my-equipment\\MyEquipment.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\new-user-validation\\NewUserValidation.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\createNewCustomer.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registeredProductList.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\product-registration\\registerProduct.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\CreateQuoteEditProductDeleteQuote.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\FilterQuotes.step.js:20"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\ManuallyAddProductToQuoteFromNoSearch.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\Repairs-Quotes-Search.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\RepairsOrdersSearch.step.js:20"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\repairs\\VerifyMyOrderMyQuotesTabs.step.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\productAvailability.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\quickLink.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\search\\search.step.js:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesFilterTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesMarketingPage.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\ServicesSortTicketsAndContracts.step.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\appDetails.step.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\visitapp\\visitapps.step.js:24"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\services\\shared\\services.step.js:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "A user is logged into their myRockwell account",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\logout\\logout.step.js:22"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user clicks on the menu button",
+            "match": {
+              "location": "typeScript\\tests\\my\\shared\\stepdefinitions\\shared.step.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "The user clicks on the Sign Out link",
+            "match": {
+              "location": "typeScript\\tests\\my\\features\\logout\\logout.step.js:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "User should navigate to the sign in page",
+            "match": {
+              "location": "typeScript\\tests\\shared\\features\\login\\login.step.js:92"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

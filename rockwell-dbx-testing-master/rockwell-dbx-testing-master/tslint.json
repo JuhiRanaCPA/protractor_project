@@ -1,0 +1,22 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "no-var-requires": false,
+    "promise-function-async": true,
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "quotemark": [true, "single"],
+    "typedef": [
+      true,
+      "parameter",
+      "arrow-parameter",
+      "member-variable-declaration",
+      "property-declaration"
+    ]
+  },
+  "rulesDirectory": []
+}
